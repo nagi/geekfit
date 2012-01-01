@@ -11,7 +11,7 @@ DEVICE  = atmega8
 F_CPU   = 16000000	# in Hz
 FUSE_H  = 0xc9
 FUSE_L  = 0x90
-AVRDUDE = avrdude -c stk500 -p m8 -P /dev/ttyUSB0 # edit this line for your programmer
+AVRDUDE = avrdude -c stk500 -p m8 -P /dev/ttyUSB7 # edit this line for your programmer
 
 CFLAGS  = -Iusbdrv -I. -DDEBUG_LEVEL=2
 OBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o portIn.o portOut.o usbOut.o usbIn.o main.o
